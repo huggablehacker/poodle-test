@@ -6,8 +6,8 @@ Run with -sV to use Nmap's service scan to detect SSL/TLS on non-standard ports.
 
 POODLE is CVE-2014-3566. All implementations of SSLv3 that accept CBC ciphersuites are vulnerable. For speed of detection, this script will stop after the first CBC ciphersuite is discovered. If you want to enumerate all CBC ciphersuites, you can use Nmap's own ssl-enum-ciphers to do a full audit of your TLS ciphersuites. `SOURCE` https://nmap.org/nsedoc/scripts/ssl-poodle.html
 
-*Save the .sh
-*Modify the argument's mode with `chmod a+x`
+* Save the .sh
+* Modify the argument's mode with `chmod a+x`
 
 Usage of this would be:
 
