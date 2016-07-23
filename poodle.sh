@@ -1,17 +1,9 @@
 #!/bin/bash
-#set -x
 
-input=$1
-
-if [[ $input =~ : ]]; then
-host=$input
-else
-host=$input:443
+if [ -z "$1" ]; then
+	echo "[*] NMAP Poodle Scan"
+	echo "[*] Usage	: $0 IP Address "
+	exit 0
 fi
 
-check=”`echo ‘x’ | openssl s_client -connect ${host} -quiet -ssl3 2> /dev/null`”
-if [ -z “${check}” ]; then
-echo “not vulnerable”
-else
-echo “vulnerable”
-fi
+nmap -sV --version-light --script ssl-poodle -p 443 $1 >> $1-1.txt
