@@ -5,6 +5,8 @@
 
 Usage of this would be:
 
-* $ ./poodle.sh `www.google.com``
+* $ ./poodle.sh `www.google.com`
 
 <b>Full disclosure: You’ll need `nmap` installed to make this work correctly.<b>
+
+Output file will save to the current directory. 
