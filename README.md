@@ -9,4 +9,4 @@ Usage of this would be:
 
 <b>Full disclosure: You’ll need `nmap` installed to make this work correctly.</b>
 
-Output file will save to the current directory.
+Output file will save to the current directory. See `output.txt` for simulated postive results.
