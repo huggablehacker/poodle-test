@@ -5,7 +5,6 @@
 
 Usage of this would be:
 
-* $ ./poodle.sh `www.google.com`
-* $ ./poodle.sh `pop.gmail.com:995`
+* $ ./poodle.sh `www.google.com``
 
-<b>Full disclosure: You’ll need openssl installed to make this work correctly.<b>
+<b>Full disclosure: You’ll need `nmap` installed to make this work correctly.<b>
